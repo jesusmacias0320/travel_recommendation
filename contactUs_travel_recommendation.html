@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+
+    </head>
 </head>
 <body>
-    
+    <nav><h1>TravelBloom</h1>
+        <ul>
+          <li><a href="./travel_recommendation.html" id="home">Inicio </a></li>
+          <li><a href="./aboutUs_travel_recommendation.html" id="aboutUs">About Us </a></li>
+          <li><a href="./contactUs_travel_recommendation.html" id="contactUs">Contact Us </a></li>
+          <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword">  </li>
+          <li><button id='btnSearch'>Search</button>
+          <li><button id='btnClear'>Clear</button>
+          </li>
+        
+        </ul>
+        </nav>
+      <center><h1>Contáctenos</h1>
+        <p>No dude en contactarnos para saber más sobre sus condiciones y métodos de tratamiento.</p>
+      </center>
+        
+
+  <form id="contactForm">
+    <div>
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" onclick="thankyou()">Enviar</button>
+  </form>
+  <script src="travel_recommendation.js"></script>
+
 </body>
 </html>
